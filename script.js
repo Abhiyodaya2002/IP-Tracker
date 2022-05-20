@@ -5,8 +5,11 @@ let loc=document.getElementById('location');
 let geo=document.getElementById('geo');
 let timezone=document.getElementById('timezone');
 let version=document.getElementById('version');
+
+var apikey='227c19eb4ebc5633705c0fc8b85f4c73';
+var url= 'https://api.ipstack.com/'+'?access_key='+ apikey;
 button.addEventListener('click', ()=>{
-    fetch('https://ipapi.co/json')
+    fetch('https://ipapi.co/json/')
     .then((response) =>{return response.json()})
     .then((data)=>{
        // console.log(data);
