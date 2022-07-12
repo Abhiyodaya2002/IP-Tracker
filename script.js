@@ -16,7 +16,7 @@ button.addEventListener('click', ()=>{
       // alert(`Your IP Address is: ${data.query}`)
        ip.innerHTML=`Your IP Address is: ${data.ip}`;
        version.innerHTML=`IP version is: ${data.version}`;
-       loc.innerHTML=`Your location is: ${data.city} ${data.region}, ${data.country_name}`;
+       loc.innerHTML=`Your country is: ${data.country_name}`;
          geo.innerHTML=`Your Geo location is: ${data.latitude}  ${data.longitude}`;
          timezone.innerHTML=`Your time zone is: ${data.timezone}`;
     })
